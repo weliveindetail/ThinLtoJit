@@ -1,0 +1,12 @@
+buildType:
+  default: debug
+  choices:
+    debug:
+      short: Debug
+      long: Emit debug information
+      buildType: Debug
+      linkage: shared
+      settings:
+        CMAKE_C_COMPILER: clang
+        CMAKE_CXX_COMPILER: clang++
+        LLVM_DIR: /media/staehff/LLVM/llvm60/build/lib/cmake/llvm
